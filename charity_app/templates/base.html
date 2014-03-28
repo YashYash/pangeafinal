@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+
+{% block li %}
+    <li><a href="{% url 'auth_login' %}?next=/charities/info">Log in as a Charity</a></li>
+    <li><a href="{% url 'auth_login' %}?next=/givers">Log in as a Giver</a></li>
+    <li><a href="{% url 'auth_login' %}?next=/givers/new/">Log in as a User</a></li>
+    <li><a href="{% url 'registration_register' %}">Not a member - Sign Up Here</a></li>
+    <li><a href="#">About Us</a></li>
+{% endblock %}

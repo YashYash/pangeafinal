@@ -1,0 +1,940 @@
+@import url(http://fonts.googleapis.com/css?family=Crushed|Sail|Montez|Merienda+One|Radley|Italianno|Rancho|Damion|Leckerli+One|Uncial+Antiqua|Amarante);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Cabin|Economica|Pompiere|Allura|Patrick+Hand+SC|Sniglet|Rokkitt|Elsie|Allerta+Stencil|Pathway+Gothic+One|Ruda|Raleway|Oxygen);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle|Poiret+One|Sail|Kite+One|Carrois+Gothic+SC);
+
+/** For index.html, the landing page **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poiret One', sans-serif;
+
+    font-size: 14px;
+}
+
+/** formata elementos que tem backgrounds parallax **/
+.bgParallax {
+    font-family: 'Poiret One', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px; /*1920px*/
+    position: relative;
+    min-height: 100%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* Define backgrounds dos divs */
+#quemsomos {
+    background-image: url('../images/hands.png');
+    height: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+#quemsomos6 {
+    background-image: url('../images/phone.png');
+    height: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+#quemsomos1 {
+    background-image: url('../images/mount1.jpg');
+    height: 146%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+#quemsomos3 {
+    background-image: url('../images/moro-rock-sequoia-national-park-nature-hd-wallpaper-1920x1080-10795.jpg');
+    height: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+#missao {
+    background-image: url('../images/kids.jpg');
+
+    -webkit-box-shadow: -20px 0 20px 5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -20px 0 20px 5px rgba(0, 0, 0, 0.7);
+    -ms-box-shadow: -20px 0 20px 5px rgba(0, 0, 0, 0.7);
+    -o-box-shadow: -20px 0 20px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: -20px 0 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+/** Formata o article que vai o texto **/
+.bgParallax article {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+
+    margin: 0 auto;
+    padding: 5% 0 0;
+
+}
+
+/** formata texto **/
+article h1 {
+    font-size: 40px;
+}
+
+article p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 40px
+
+}
+
+article p a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+#container {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+    margin: auto;
+    color: #ffffff;
+    padding: 55px 1%;
+    text-align: center;
+
+}
+
+#container h1 {
+    font-size: 1.8em;
+}
+
+#container h2 {
+    font-size: 1.35em;
+}
+
+#navbar {
+    width: 80%; /* Should be same width as content container */
+    position: fixed;
+    top: 0;
+    left: 15%; /* Left is 100-[content width]/2). */
+    opacity: 1;
+    z-index: 100;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+
+nav ul {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 22px;
+    list-style-type: none;
+    background-color: none;
+    opacity: 1;
+    width: 50%;
+    margin: 0;
+    padding: 10px 0;
+    color: #F1F1F1;
+    border-radius: 20px;
+}
+
+nav ul:nth-of-type(1) {
+    float: left;
+}
+
+nav ul:nth-of-type(2) {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin: 0;
+    padding: 30px;
+}
+
+nav ul:nth-of-type(2) li {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.fixednav {
+    left: 0 !important;
+    width: 100% !important;
+    opacity: .9 !important;
+}
+
+.filler {
+    font-size: .8em;
+}
+
+.fixednav ul {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 15% !important;
+    text-align: center;
+}
+
+.fixednav ul li {
+    display: block;
+    float: none;
+}
+
+.fixednav ul:nth-of-type(2) li {
+    float: none;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 15px;
+    }
+
+    #container {
+        width: 80%;
+        position: absolute;
+        left: 20%;
+        padding: 1%;
+    }
+
+    #navbar {
+        width: 30%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul:nth-of-type(2) {
+        float: left;
+    }
+
+    nav ul li, nav ul:nth-of-type(2) li {
+        float: none;
+    }
+
+    nav#navbar ul a {
+        display: block;
+    }
+
+    .fixednav {
+        left: 0 !important;
+        width: 20% !important;
+        opacity: 1 !important;
+    }
+
+    .fixednav ul {
+        -webkit-transition: none;
+        transition: none;
+        width: 100% !important;
+        text-align: left;
+
+    }
+
+    #logo {
+        position: relative;
+        right: 80px;
+    }
+
+    .clicks {
+        position: absolute;
+        left: 100px;
+    }
+
+    #moveimage {
+        position: relative;
+        top: 400px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav#navbar {
+        top: 55px;
+        left: -150px;
+        width: 150px;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+        opacity: 0.92;
+    }
+
+    nav#navbar ul {
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+    }
+
+    body.menu-active nav#navbar {
+        left: 0px;
+    }
+
+    body.menu-active nav#navbar ul {
+        left: 0px;
+    }
+
+    #container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 1% 1% 43px;
+        overflow: scroll;
+    }
+
+    div.menu-trigger {
+        position: fixed;
+        top: 7px;
+        left: 7px;
+        width: 32px;
+        height: 32px;
+        background: #9C413F;
+        cursor: pointer;
+        border-radius: 5px;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+        z-index: 999;
+        opacity: 0.8;
+    }
+
+    div.menu-trigger:before {
+        content: 'P';
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        font-size: 1.2em;
+        text-align: center;
+        text-transform: none;
+        line-height: 32px;
+        color: #fff;
+    }
+
+    #moveimage {
+        position: relative;
+        top: 400px;
+
+    }
+}
+
+#logo {
+
+}
+
+.clicks {
+    position: relative;
+    left: 15px;
+
+}
+
+.clicks ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.clicks ul li {
+    display: inline;
+    padding: 25px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.frontpage {
+    font-size: 25px;
+}
+
+.frontpage:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+#status {
+    font-size: 10px;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 27px;
+}
+
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Floats button in the middle */
+
+.container {
+    text-align: center;
+    align-content: center;
+}
+
+#slogan {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 60px;
+}
+
+#inpage {
+    position: relative;
+    bottom: 60px;
+}
+
+}
+#moveimage {
+    position: relative;
+    top: 400px;
+
+}
+
+.panel {
+    height: 40%;
+    margin: auto;
+    position: relative;
+
+}
+
+.card {
+    height: 25%;
+    width: 20%;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+
+}
+
+.back5 {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+
+}
+
+#logocircle {
+    position: relative;
+
+}
+
+.lorem {
+    width: 70%;
+
+}
+
+.panel {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+    position: relative;
+
+}
+
+.panel1 {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    position: relative;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front5 {
+    z-index: 2;
+    background-image: url("../images/fb.png");
+    background-size: cover;
+    border-radius: 200px;
+
+}
+
+.panel3 {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+
+}
+
+.front {
+    z-index: 2;
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    border-radius: 200px;
+
+}
+
+.front3 {
+    z-index: 2;
+    background-image: url("../images/usercircle.png");
+    background-size: cover;
+    border-radius: 200px;
+    position: relative;
+    bottom: 20px;
+
+    opacity: 0.6;
+}
+
+.front2 {
+    z-index: 2;
+    background-image: url("../images/charitycircle.png");
+    background-size: cover;
+    border-radius: 200px;
+    position: relative;
+    bottom: 20px;
+    opacity: 0.6;
+
+}
+
+.front1 {
+    z-index: 2;
+    background-image: url("../images/givercircle.png");
+    background-size: cover;
+    border-radius: 200px;
+    opacity: 0.6;
+
+}
+
+.front6 {
+    z-index: 2;
+    background-image: url("../images/twitty.png");
+    background-size: cover;
+    border-radius: 200px;
+
+}
+
+.back {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-image: url("../images/backofme.png");
+    border-radius: 200px;
+
+}
+
+.back3 {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-image: url("../images/tweetfbback.png");
+    border-radius: 200px;
+
+}
+
+.back6 {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-image: url("../images/tweetfbback.png");
+    border-radius: 200px;
+
+}
+
+.back2 {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-image: url("../images/tweetfbback.png");
+    border-radius: 200px;
+
+}
+
+.back5 {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-image: url("../images/tweetfbback.png");
+    border-radius: 200px;
+
+}
+
+.panel:hover .front {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel3:hover .front5 {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel3:hover .front6 {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.giverimage:hover {
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+}
+
+.panel1:hover .front {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel:hover .front1 {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel:hover .front2 {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel:hover .front3 {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel3:hover .back6 {
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel:hover .back3 {
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel1:hover .back {
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel3:hover .back5 {
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+.panel:hover .back2 {
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-radius: 200px;
+    -moz-box-shadow: 0 0 20px 5px #000000;
+    -webkit-box-shadow: 0 0 20px 5px #000000;
+    box-shadow: 0 0 20px 5px #000000;
+    border-radius: 200px;
+
+}
+
+#bye {
+    background-image: url('../images/craazy.jpg');
+    background-position: top left;
+    background-attachment: fixed;
+}
+
+#byetitle {
+    font-family: 'Poiret One', sans-serif;
+    color: white;
+    font-size: 70px;
+    position: relative;
+    top: 40px;
+
+}
+
+#backhome {
+    position: relative;
+}
+
+#backhome2 {
+    position: relative;
+
+}
+
+#up {
+    position: relative;
+    bottom: 35px;
+    width: 85%;
+    height: 600px%;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    display: inline-block;
+    color: #ffffff;
+    background-image: url("../images/divback.png");
+    background-size: cover;
+    border-radius: 30px;
+
+}
+
+#fresh {
+    font-family: 'Poiret One', sans-serif;
+    padding: 20px;
+
+}
+
+#down {
+    position: relative;
+    top: 200px;
+}
+
+#p {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 15px;
+    border-color: #000000;
+    padding: 5px;
+}
+
+#q {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 13px;
+    border-color: #000000;
+    padding: 3px;
+    position: relative;
+    bottom: 23px;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+#phone {
+    background-image: url("../images/divback.png");
+    border-radius: 20px;
+    width: 40%;
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    padding: 30px;
+    position: relative;
+    left: 100px;
+    top: 250px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+#text1 {
+    font-family: 'Poiret One', sans-serif;
+    padding-bottom: 30px;
+    font-size: 45px;
+
+}
+
+#text2 {
+    font-size: 20px;
+    font-family: 'Poiret One', sans-serif;
+    padding-top: 20px;
+
+}
+
+#s {
+    background-image: url("../images/divback.png");
+    background-size: cover;
+    border-radius: 10px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+#founder {
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+}
+
+#name {
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+}

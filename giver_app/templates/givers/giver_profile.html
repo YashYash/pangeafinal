@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+
+{% block li %}
+
+    <li><a href="{% url "view_newsfeed" %}">News feed</a></li>
+    <li><a href="{% url "giver_profile" %}">Your Profile</a></li>
+    <li><a href="{% url "stream" %}">Micro-Donation Videos</a></li>
+{% endblock %}
+{% block content %}
+    <div class="down">
+        This is {{ user.username }}'s Profile Page
+        <h1>Giver:{{ giver.name }}</h1>
+
+        <h3>Giver Image:</h3> <img src="images/giver_logo/{{ charity.image.url }}"><br>
+        About: {{ charity.description }}
+        <p>Giver Url:{{ giver.giver_url }}</p>
+        <br>
+    </div>
+{% endblock %}
+
+{% block page %}
+    <body class="grey"></body>
+{% endblock %}

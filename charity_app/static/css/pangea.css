@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Crushed|Sail|Montez|Merienda+One|Radley|Italianno|Rancho|Damion|Leckerli+One|Uncial+Antiqua|Amarante);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle|Poiret+One|Sail|Kite+One|Carrois+Gothic+SC);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|Cabin|Economica|Pompiere|Allura|Patrick+Hand+SC|Sniglet|Rokkitt|Elsie|Allerta+Stencil|Pathway+Gothic+One|Ruda|Raleway|Oxygen);
+
+body {
+    background-image: url("../images/damn.jpg");
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    z-index: -999;
+}
+
+#registercomp {
+    background-image: url("../images/rise.jpg");
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    z-index: -999;
+}
+
+#logo {
+    z-index: 200;
+}
+
+#context {
+    font-family: 'Poiret One', sans-serif;
+    width: 60%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    background-image: url("../images/divback.png");
+    padding: 20px;
+    border-radius: 20px;
+    height: 90%;
+
+}
+
+a:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+#text {
+    position: relative;
+    bottom: 90px;
+}
+
+#up {
+    position: relative;
+    bottom: 100px;
+}

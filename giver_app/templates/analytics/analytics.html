@@ -1,0 +1,98 @@
+{% extends "analyticstemp.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% block moresources %}
+
+
+    <link rel="stylesheet" type="text/css" href="{% get_static_prefix %}css/flexslider.css">
+
+
+    <!--Flex slider -->
+    <script src="{% get_static_prefix %}js/jquery.flexslider.js"></script>
+
+    <!--angular javascript stuff-->
+    <script src="{% get_static_prefix %}js/vendor/angular.js"></script>
+    <script src="{% get_static_prefix %}js/vendor/angular-route.js"></script>
+    <script src="{% get_static_prefix %}js/vendor/angular-resource.js"></script>
+    <script src="{% get_static_prefix %}js/angular-flexslider.js"></script>
+
+    <!-- JavaScript Files -->
+    <script src="{% get_static_prefix %}js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="{% get_static_prefix %}js/controllers/analyticsController.js"></script>
+
+
+
+
+
+
+{% endblock %}
+
+{% block leftli %}
+
+    <li><a href="{% url "fbusers" %}">Home</a></li>
+    <li><a href="{% url "fbstream" %}">Videos</a></li>
+    <li><a href="{% url "fbnewsfeed" %}">Newsfeed</a></li>
+
+{% endblock %}
+
+
+{% block content %}
+    <div id="topfive">
+        {{ giver.id }}
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1453223734911171";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div ng-app="analyticsApp">
+            <div class="center">
+                {{ giver.id }}
+
+
+                <div id="wrapper1" class="animated fadeInRightBig1 down4">
+                    <center><img src={{ static_url }}"static/images/circ.png"></center>
+                    <section>
+                        <div id="btn-container2">
+                            <a class="links" href="#/finance/{{ giver.id }}/"><input type="submit" value="Finance"
+                                                                                     id="button-red"/></a>
+
+                            <div class="ease"></div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="btn-container2">
+                            <a class="links" href="#/count/{{ giver.id }}/"><input type="submit"
+                                                                                   value="Click and visits"
+                                                                                   id="button-red"/></a>
+
+                            <div class="ease"></div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="btn-container2">
+                            <a href="{% url 'ourcharities' %}"><input type="submit" value="Your Charities"
+                                                                      id="button-red"/></a>
+
+                            <div class="ease"></div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <!-- wrapper -->
+            </div>
+            <div ng-view></div>
+        </div>
+    </div>
+
+{% endblock %}
+

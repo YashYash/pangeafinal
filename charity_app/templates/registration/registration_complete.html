@@ -1,0 +1,24 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>{% block title %}User test{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/pangea.css" %}">
+</head>
+<body id="registercomp">
+ <center>
+      <div id="context">
+ <div id="logo">
+             <img src="{% static url %}images/pange2.png">
+     </div>
+
+
+<div id="text">
+<h1>{% trans "Thank you for signing up for Pangea. We have sent you an activation email." %}</h1>
+    </div>
+ </div>
+</center>
+
+</body>

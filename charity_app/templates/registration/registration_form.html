@@ -1,0 +1,23 @@
+{% extends "logintemp.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+ <center>
+ <div class="animated fadeInRightBig1 down2">
+ <img src="{% static url %}images/circ.png">
+<form method="post" action=".">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+<input id="register" type="submit" value="{% trans 'Submit' %}" />
+</form>
+                 <a href="{% url "social:begin" "facebook" %}"><img src="{% static url %}images/fbinw.png"></a><br>
+    <a class="backbtn" href="{% url "index" %}"><img src="{% static url %}images/backarrow.png" width="70px" length="70px"></a>
+ </div>
+</center>
+{% endblock %}
+
+{% block page %}
+    <body class="grey"></body>
+{% endblock %}

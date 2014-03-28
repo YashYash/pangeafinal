@@ -1,0 +1,166 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>{% block title %}User test{% endblock %}</title>
+    <link href='http://fonts.googleapis.com/css?family=Elsie:400,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{% static "css/homepage.css" %}">
+    <script type="text/javascript" src="{% static "jquery/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/grid.js" %}"></script>
+    <script type='text/javascript'
+            src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+</head>
+
+
+<div id="quemsomos" class="bgParallax" data-speed="1.5">
+    <article id="wide">
+        <div id="logo" class="clicks">
+
+            <img src="{% static url %}images/pange2.png">
+
+            <div id="slogan">We help you help others</div>
+            <ul class="inpage">
+
+                <li><a class="frontpage" href="#">Our Work</a></li>
+                <li><a class="frontpage" href="#">About us</a></li>
+                <li><a class="frontpage" href="#">The Founder</a></li>
+            </ul>
+
+        </div>
+
+    </article>
+</div>
+
+<div id="quemsomos1" class="bgParallax" data-speed="0.3">
+    <article>
+        <center>
+            <div id="up">
+                <h3 id="fresh">Pangea's ultimate goal is to help Charities raise $MONEY$. This is done by using our
+                    micro-donation video platform.</h3>
+                <hr>
+                <div class="panel">
+                    <div class="front1 card">
+                    </div>
+                    <div class="back2 card">
+                        <a href="#"><p id="q">Donates to Charites. They are provided with an amazing advertising
+                            space.</p></a>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="front2 card">
+                    </div>
+
+                    <div class="back2 card">
+                        <a href="#"><p id="p">Posts videos. Thats it!</p></a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+                    <div class="front3 card">
+                    </div>
+
+                    <div class="back3 card">
+                        <a href="#"><p id="p">Likes & shares <br> videos</p></a>
+
+                    </div>
+
+                </div>
+                <hr>
+                <h3 id="fresh">For every 10 likes and shares, a giver will donate 10 cents to the charity that posted
+                    the video.</h3>
+
+            </div>
+
+        </center>
+
+    </article>
+
+
+    <div id="quemsomos3" class="bgParallax" data-speed="0.2">
+        <article>
+            <center>
+                <div id="s">
+                    <h1 id="founder">Meet the Founder</h1>
+                    <hr>
+                    <h3 id="name">Yash Saxena</h3></div>
+                <div id="down">
+                    <div class="panel1">
+                        <div class="front card">
+                        </div>
+                        <a href="#">
+                            <div class="back card">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </article>
+    </div>
+    <div id="quemsomos6" class="bgParallax" data-speed="0">
+        <article>
+            <center>
+                <div id="phone">
+                    <h1 id="text1">One day Pangea will be in the app store</h1>
+                    <hr>
+                    <h3 id="text2">Like, Share and Send videos from anywhere and be able to donate to any cause ON THE
+                        GO</h3>
+                </div>
+            </center>
+        </article>
+    </div>
+    <div id="container1">
+
+        <div class="menu-trigger"></div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="{% url 'auth_login' %}?next=/users/">Log in </a></li>
+
+            </ul>
+
+            <ul>
+                <li><a href="{% url 'registration_register' %}"> Register</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <script>
+        window.onscroll = function () {
+            document.getElementById('navbar').setAttribute('class', (window.pageYOffset > 5 ? 'fixednav clearfix' : 'clearfix'));
+        }
+    </script>
+
+    <script>
+        (function () {
+            var $body = document.body
+                    , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+            if (typeof $menu_trigger !== 'undefined') {
+                $menu_trigger.addEventListener('click', function () {
+                    $body.className = ( $body.className == 'menu-active' ) ? '' : 'menu-active';
+                });
+            }
+
+        }).call(this);
+
+    </script>
+
+
+
+
+
+
+
+
+    {% block page %}
+    {% endblock %}
+
+</html>

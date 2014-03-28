@@ -1,0 +1,21 @@
+{% extends "pangeatemp.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    <center>
+        <div id="context">
+            <div id="logo">
+                <img src="{% static url %}images/pange2.png">
+            </div>
+
+            <div id="up">
+                <h1>We help you help others</h1>
+
+                <h3>Thank you for signing up {{ user.username }}</h3>
+
+                <h1><a href="{% url 'auth_login' %}?next=/users/">Go log in </a></h1>
+            </div>
+        </div>
+    </center>
+{% endblock %}

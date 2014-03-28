@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% block li %}
+    <li><a href="{% url "view_newsfeed" %}">News feed</a></li>
+    <li><a href="{% url "charity_info" %}">Your Profile</a></li>
+    <li><a href="{% url "stream" %}">Micro-Donation Videos</a></li>
+    <li><a href="{% url "new_video" %}">Add a Video</a></li>
+    <li><a href="#">About Us</a></li>
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="down">
+        This will be where the news feed shows up
+    </h1>
+
+{% endblock %}
+
+{% block page %}
+
+    <body class="grey"></body>
+
+{% endblock %}

@@ -1,0 +1,114 @@
+<div class="center">
+    <div class="back3">
+
+
+
+        <!--section id="section2" ng-show="is(2)"-->
+        <div class="top">
+
+            <flex-slider slide="item in all track by item.id" my-post-repeat-directive>
+                <div id="total3"><h1>All likes, shares and sends</h1>{{ item.likes + item.shares + item.sends }}</div>
+                <div id="total2"><h1>Money donated</h1>${{ (item.likes+ item.shares)*0.10|number:2 }}</div>
+                <li>
+
+
+                    <center>
+
+                        <h1 class="font big" id="move">{{ item.title }}</h1>
+
+                        <div id="clicks">
+                            Likes: {{ item.likes }}
+                            Shares: {{ item.shares }}
+                            Sends: {{ item.sends }}
+                        </div>
+                        <a href="#/charity/{{ item.charity.id }}/"><img class="animated fadeInRightBig1 minigiverimage"
+                                                                        src="{{ item.charity.image }}" height="90px"
+                                                                        width="90px"></a>
+                    <span ng-click="giverclick()"><a href="#/giver/{{ item.random_giver.id }}/"><img
+                            class="animated fadeInLeftBig1 minigiverimage"
+                            src="{{ item.random_giver.image }}" height="90px"
+                            width="90px"></a></span>
+                        <center>
+                            <iframe width="70%" height="60%" src="{{ item.trusted_url }}"></iframe>
+                        </center>
+
+                        <div ng-click="facebookLike(item)">
+                            <div class="fb-like" data-href="{{ item.video_url }}" data-layout="button"
+                                 data-action="like"
+                                 data-show-faces="true" data-share="false"></div>
+                        </div>
+                        <div ng-click="facebookShare(item)">
+                            <div class="fb-share-button" data-href="{{ item.video_url }}" data-type="button"></div>
+                        </div>
+                        <div ng-click="facebookSend(item)">
+                            <div class="fb-send" data-href="{{ item.video_url }}" data-colorscheme="light"></div>
+                        </div>
+                        <h3 class="font normal">For every 10 likes and shares ,<a class="links"
+                                                                                  href="#/giver/{{ item.random_giver.id }}/">{{ item.random_giver.name }}</a>,
+                            will donate 10 cents to the <a class="links"
+                                                           href="#/charity/{{ item.charity.id }}/">{{ item.charity.name }}</a>
+                        </h3>
+
+                        <div class="fb-comments" data-href="{{ item.trusted_url }}" data-numposts="5"
+                             data-colorscheme="light"></div>
+                    </center>
+
+                </li>
+            </flex-slider>
+
+        </div>
+
+
+        <input id="custom" type="text" ng-model="searchText" placeholder="Search for a Video" id="Search">
+
+        <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+            <div ng-repeat="item in all|filter:searchText" my-post-repeat-directive>
+
+
+                <hr>
+                <h1 class="font big" id="move">{{ item.title }}</h1>
+
+                <div id="clicks">
+                    Likes: {{ item.likes }}
+                    Shares: {{ item.shares }}
+                    Sends: {{ item.sends }}
+                </div>
+
+                <div>
+                    <a href="#/charity/{{ item.charity.id }}/"><img class="animated fadeInRightBig1 minigiverimage"
+                                                                    src="{{ item.charity.image }}" height="90px"
+                                                                    width="90px"></a>
+                    <a ng-click="giverclick()" href="#/giver/{{ item.random_giver.id }}/"><img
+                            class="animated fadeInLeftBig1 minigiverimage" src="{{ item.random_giver.image }}"
+                            height="90px" width="90px"></a>
+                </div>
+                <iframe width="70%" height="60%" src="{{ item.trusted_url }}"></iframe>
+
+                <br>
+
+                <div ng-click="facebookLike(item)">
+                    <div class="fb-like" data-href="{{ item.video_url }}" data-layout="button" data-action="like"
+                         data-show-faces="true" data-share="false"></div>
+                </div>
+                <div ng-click="facebookShare(item)">
+                    <div ng-click="facebookShare(item)" class="fb-share-button" data-href="{{ item.video_url }}"
+                         data-type="button"></div>
+                </div>
+                <div ng-click="facebookSend(item)">
+                    <div ng-click="facebookSend(item)" class="fb-send" data-href="{{ item.video_url }}"
+                         data-colorscheme="light"></div>
+                </div>
+                <h3 class="font normal">For every 10 likes and shares , <a class="links"
+                                                                           href="#/giver/{{ item.random_giver.id }}/">{{ item.random_giver.name }}</a>
+                    ,
+                    will donate 10 cents to the <a class="links"
+                                                   href="#/charity/{{ item.charity.id }}/">{{ item.charity.name }}</a>
+                </h3>
+
+                <div class="fb-comments" data-href="{{ item.trusted_url }}" data-numposts="5"
+                     data-colorscheme="light"></div>
+
+            </div>
+        </div>
+    </div>
+

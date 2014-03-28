@@ -1,0 +1,17 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>{% block title %}User test{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/pangea.css" %}">
+
+    <script type="text/javascript" src="{% static "jquery/jquery.min.js" %}"></script>
+
+    {% block moresources %}{% endblock %}
+</head>
+
+
+{% block content %}
+{% endblock %}
