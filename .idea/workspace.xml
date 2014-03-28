@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f516ed8e-954f-4b84-a052-6a6133e8a19d" name="Default" comment="">
+    <list default="true" id="f516ed8e-954f-4b84-a052-6a6133e8a19d" name="Default" comment="and again`">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="videotemplate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/charity_app/templates/videotemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1005">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fbvideotemplate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/charity_app/templates/fbvideotemplate.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,7 +81,16 @@
       <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.7270408" vertical-offset="0" max-vertical-offset="392">
+            <state line="40" column="21" selection-start="770" selection-end="770" vertical-scroll-proportion="1.5306122" vertical-offset="0" max-vertical-offset="690">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements_new.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements_new.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -145,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/charity_app/templates/signup.html" />
         <option value="$PROJECT_DIR$/charity_app/templates/videotemplate.html" />
         <option value="$PROJECT_DIR$/charity_app/static/js/controllers/charityController.js" />
         <option value="$PROJECT_DIR$/charity_app/static/js/controllers/giverController.js" />
@@ -195,6 +194,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/Pangea_project/wsgi.py" />
         <option value="$PROJECT_DIR$/Pangea_project/settings.py" />
+        <option value="$PROJECT_DIR$/requirements_new.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
@@ -589,7 +589,11 @@
       <created>1396048552021</created>
       <updated>1396048552021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="and again">
+      <created>1396048676444</created>
+      <updated>1396048676444</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -660,11 +664,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/giver_app/templates/givers/edit_giver.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="605" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/giver_app/templates/givers/giver_info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.65217394" vertical-offset="0" max-vertical-offset="840" />
@@ -946,9 +945,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements_new.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.7270408" vertical-offset="0" max-vertical-offset="392">
+        <state line="40" column="21" selection-start="770" selection-end="770" vertical-scroll-proportion="1.5306122" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
