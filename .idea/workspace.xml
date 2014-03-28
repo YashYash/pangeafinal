@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f516ed8e-954f-4b84-a052-6a6133e8a19d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -91,7 +90,7 @@
       <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.49744898" vertical-offset="0" max-vertical-offset="392">
+            <state line="19" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.7270408" vertical-offset="0" max-vertical-offset="392">
               <folding />
             </state>
           </provider>
@@ -586,7 +585,11 @@
       <created>1396048400228</created>
       <updated>1396048400228</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="and again">
+      <created>1396048552021</created>
+      <updated>1396048552021</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -648,7 +651,8 @@
     </option>
     <MESSAGE value="checking in all new?" />
     <MESSAGE value="more changes to requirements and settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="more changes to requirements and settings" />
+    <MESSAGE value="and again" />
+    <option name="LAST_COMMIT_MESSAGE" value="and again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.49744898" vertical-offset="0" max-vertical-offset="392">
+        <state line="19" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.7270408" vertical-offset="0" max-vertical-offset="392">
           <folding />
         </state>
       </provider>
