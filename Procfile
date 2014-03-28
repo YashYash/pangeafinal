@@ -1,0 +1,1 @@
+web: gunicorn Pangea_project.wsgi
