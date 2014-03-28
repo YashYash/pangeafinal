@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Pangea_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pangea_project_databse',
         'USER': "root",
         'PASSWORD':"",
